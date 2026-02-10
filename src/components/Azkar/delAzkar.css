@@ -1,0 +1,60 @@
+/* body {
+    background-color: beige;
+}
+
+.azkar-card{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+   
+}
+
+.azkar-card .detail-azkar{
+   text-align: center;
+   margin: 30px;
+   background-color: azure;
+      height: auto;
+   border: var(--main-color) solid 2px !important;
+   border-radius: 10px;
+   
+   
+}
+
+.azkar-card .detail-azkar h1{
+    padding: 20px;
+}
+
+.azkar-card .detail-azkar .head{
+    display: flex;
+    justify-content: space-between;
+    background-color: green !important;
+    height: auto !important;
+    padding: 0px 20px;
+}
+
+.azkar-card .detail-azkar .head .head-del{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.azkar-card .detail-azkar .head .head-del h5{
+    font-size: 30px;
+    padding: 10px 10px;
+}
+
+
+.azkar-card .detail-azkar .head .head-del p{
+    font-size: 30px;
+    padding: 10px 10px;
+    background-color: bisque;
+}
+
+.head-del1{
+    font-size: 30px;
+    padding: 10px 10px;
+}
+.head-del1 p{
+    margin-left: -30px;
+}
+
+ */

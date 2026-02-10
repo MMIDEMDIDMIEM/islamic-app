@@ -1,0 +1,46 @@
+✅ تحسين محتوى الأذكار ليكون أكثر تناسقًا
+.Azkar-details .Azcar-content {
+    width: 280px; 
+    max-width: 100%; /* لضمان عدم خروجها عن الشاشة في الجوال */
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    border: 1px solid #e0e0e0;
+}
+
+/* ✅ تأثير عند تمرير الماوس */
+.Azkar-details .Azcar-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border-color: var(--main-color);
+}
+
+/* ✅ تنسيق الصورة داخل البطاقة (إن وجدت) */
+.Azcar-content img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+    object-fit: contain;
+}
+
+/* ✅ تنسيق اسم نوع الذكر (صباح/مساء) */
+.Azcar-content h4 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* ✅ دعم الشاشات الصغيرة جداً */
+@media (max-width: 480px) {
+    .Azkar-details .Azcar-content {
+        width: 100%; /* تأخذ العرض الكامل في الهواتف الصغيرة */
+    }
+    
+    .row h3 {
+        font-size: 22px;
+    }
+}

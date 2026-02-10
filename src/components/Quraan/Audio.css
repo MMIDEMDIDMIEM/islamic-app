@@ -1,0 +1,78 @@
+/* الحاوية الرئيسية */
+.audio-wrapper {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.98); /* تقليل الشفافية لراحة العين */
+    backdrop-filter: blur(15px);
+    box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.1);
+    z-index: 10000;
+    padding: 8px 15px; /* تقليل الحشو لتقليل الارتفاع */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid #d4af37; /* لمسة ذهبية أرقى */
+    transition: all 0.3s ease;
+}
+
+/* حاوية اختيار القارئ */
+.selector-container {
+    flex: 1;
+    min-width: 120px; /* تقليل الحد الأدنى ليناسب العرض بجانب الصوت */
+    margin-left: 10px;
+}
+
+.reciter-select {
+    width: 100%;
+    padding: 6px 10px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    background-color: #fcfcfc;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+/* حاوية المشغل */
+.allAudio {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end; /* ليكون المشغل بجانب القارئ */
+}
+
+.audio {
+    width: 100%;
+    max-width: 300px; /* تحديد عرض مناسب بجانب القارئ */
+    height: 35px; /* تقليل الارتفاع ليكون slim */
+}
+
+/* --- تعديلات الموبايل الذكية --- */
+@media (max-width: 768px) {
+    .audio-wrapper {
+        padding: 12px 10px;
+        /* نخليهم فوق بعض بس بتنسيق مضغوط */
+        flex-direction: column; 
+        gap: 8px;
+    }
+
+    .selector-container {
+        width: 100%;
+        margin-left: 0;
+        min-width: unset;
+    }
+
+    .reciter-select {
+        height: 40px; /* تسهيل الضغط بالإصبع */
+        font-size: 16px; /* مهم جداً: تمنع الموبايل إنه يعمل Zoom تلقائي لما تفتحي القائمة */
+    }
+
+    .allAudio {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .audio {
+        max-width: 100%; /* المشغل ياخد العرض كامل تحت القارئ */
+        height: 40px;
+    }
+}

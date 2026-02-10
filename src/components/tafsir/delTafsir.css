@@ -1,0 +1,60 @@
+.deltafsir {
+    border: 3px solid var(--main-color);
+    padding: 40px;
+}
+
+/* جعل العنوان متجاوب */
+h1 {
+    text-align: center;
+    color: var(--main-color);
+    padding: 40px 0;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/* تحسين الفقرة لتكون متجاوبة */
+p {
+    width: 80%;
+    max-width: 900px; /* يحدد حدًا أقصى للطول */
+    margin: auto; /* يجعل الفقرة في المنتصف */
+    font-size: 24px; /* حجم أصغر ليتناسب مع الشاشات الصغيرة */
+    padding: 5px 0;
+    text-align: justify;
+}
+
+/* تحسين العناوين */
+h5 {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--main-color);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+hr {
+    border: 3px solid var(--main-color);
+}
+
+/* تحسين تنسيق العنصر strong */
+strong {
+    border: 1px solid var(--main-color);
+    border-radius: 50%;
+    padding: 5px 15px; /* تكبير التباعد */
+    margin: 10px;
+    display: inline-block;
+}
+
+/* ✅ تحسين التجاوب باستخدام media queries */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 35px; /* تصغير العنوان للهواتف */
+    }
+    
+    p {
+        width: 90%;
+        font-size: 20px;
+    }
+
+    h5 {
+        font-size: 25px;
+  

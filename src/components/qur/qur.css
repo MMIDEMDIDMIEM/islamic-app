@@ -1,0 +1,84 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.qur{
+    padding: 30px 20px;
+    background-color: beige;
+  
+}
+
+.row h3{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--main-color);
+}
+.row {
+    width: 100%;
+  
+}
+.row .time{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px 60px;
+    border-bottom: 5px solid green;
+}
+
+.time .name{
+    font-size: 30px;
+    font-weight: 700;
+}
+.time .sel{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.time .sel h4{
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 5px;
+    color: var(--main-color);
+}
+
+.time .sel select{
+    width: 200px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.time hr{
+   border: 2px solid green;
+}
+
+.row .inner{
+    width: 100%;
+    display: flex;
+    justify-content: center; /* توسيط العناصر */
+    flex-wrap: wrap; /* السماح بنزول العناصر عند الحاجة */
+    gap: 20px; /* إضافة مسافة بين العناصر */
+    padding: 40px 0;
+    
+   
+}
+
+.prayer .prayer-one{
+    flex: 1 1 calc(25% - 40px); /* يجعل كل عنصر يأخذ 25% من العرض مع احتساب المسافات */
+    max-width: 300px; /* تجنب أن تصبح البطاقات أكبر من اللازم */
+    min-width: 200px; /* الحد الأدنى لعرض البطاقة */
+    padding: 50px 50px;
+    background-color: azure;
+    text-align: center;
+    border: 1px solid rgb(5, 192, 39);
+    border-radius: 10px;
+}
+
+.prayer .prayer-one:hover{
+    background-color: transparent;
+}
+

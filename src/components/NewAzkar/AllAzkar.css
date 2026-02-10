@@ -1,0 +1,114 @@
+/* Container styling */
+.azkar-section {
+     background-color: beige; /* لون خلفية مريح للعين */
+    min-height: 100vh;
+}
+
+.section-title {
+    font-family: 'Cairo', sans-serif;
+    font-weight: 800;
+    color: green;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 50px !important;
+    margin-top: 100px !important;
+    
+}
+
+/* التزيين أسفل العنوان */
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(green ,rgb(223, 230, 223));
+    border-radius: 10px;
+}
+
+/* Card Base Styling */
+.azkar-main-card {
+    text-decoration: none !important;
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 40px 20px;
+    text-align: center;
+    border: 1px solid rgba(0,0,0,0.05);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Hover Effect */
+.azkar-main-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    border-color: var(--card-color);
+}
+
+.card-icon {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.azkar-main-card:hover .card-icon {
+    transform: scale(1.2) rotate(10deg);
+}
+
+.card-title {
+    font-family: 'Cairo', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--card-color); /* يستخدم اللون الممرر من React */
+    margin-bottom: 10px;
+}
+
+.card-text {
+    color: #7f8c8d;
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+/* Button style inside card */
+.go-btn {
+    background-color: green;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.go-btn:hover{
+    background-color: rgb(154, 239, 154);
+    color:black
+}
+
+.azkar-main-card:hover .go-btn {
+    padding: 10px 45px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+/* إضافة لمسة جمالية خلف الكارت */
+.azkar-main-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, var(--card-color) 0%, transparent 70%);
+    opacity: 0.03;
+    pointer-events: none;
+}

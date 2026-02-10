@@ -1,0 +1,57 @@
+.Qurran{
+    padding: 50px 20px;
+    background-color: beige;
+    
+}
+ 
+
+.work .mo{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.work .ALL{
+    text-decoration: none;
+}
+
+.work h2{
+    color: var( --main-color);
+    font-size: 60px;
+    font-weight: bolder;
+    text-align: center ;
+    margin-bottom: 50px;
+
+}
+
+.work .ones{
+    background-color: azure;
+    width: 300px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(5, 192, 39);
+    
+}
+.work .ones:hover{
+    background-color: rgba(240, 255, 255, 0.086) ;
+}
+ .ones p{
+    margin-right: 40px;
+    
+}
+
+.work .ones h3{
+    font-size: 30px;
+   
+}
+.ones .text{
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: 30px;
+   
+}
+
+
+

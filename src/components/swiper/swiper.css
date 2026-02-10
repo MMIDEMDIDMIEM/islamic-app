@@ -1,0 +1,60 @@
+.mySwiper {
+    width: 100%;
+    position: relative;
+}
+
+.mySwiper img {
+    width: 100%;
+    height: 750px;
+    object-fit: cover; /* يمنع تشويه الصور */
+    border-radius: 10px;
+}
+
+/* 🎯 تصميم العنوان الرئيسي */
+.mySwiper h1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 70px;
+    font-weight: bolder;
+    color: rgb(218, 230, 220);
+    text-align: center;
+    background-color: rgba(25, 25, 25, 0.5);
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+/* 📱 تحسينات الاستجابة على الشاشات الصغيرة */
+@media (max-width: 1024px) {
+    .mySwiper img {
+        height: 600px; /* تقليل الارتفاع على الأجهزة اللوحية */
+    }
+
+    .mySwiper h1 {
+        font-size: 50px; /* تصغير حجم النص */
+
+    }
+}
+
+@media (max-width: 768px) {
+    .mySwiper img {
+        height: 500px; /* تقليل ارتفاع الصور على الهواتف */
+    }
+
+    .mySwiper h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mySwiper img {
+        height: 400px; /* تقليل ارتفاع الصورة أكثر على الشاشات الصغيرة جدًا */
+    }
+
+    .mySwiper h1 {
+        font-size: 30px;
+        top: 30%; /* تعديل موضع العنوان ليكون أكثر تناسبًا */
+        
+    }
+}

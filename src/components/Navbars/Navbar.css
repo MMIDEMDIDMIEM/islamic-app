@@ -1,0 +1,56 @@
+/* 🔹 تثبيت شريط التنقل في الأعلى */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.8); /* جعل الخلفية شفافة قليلاً */
+    transition: background-color 0.3s ease-in-out;
+    margin-bottom: 10px;
+}
+
+.text-white{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* 🔹 تحسين تنسيق الروابط */
+.ELE {
+    font-size: 20px;
+    margin: 0 15px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+/* 🔥 عندما يكون الرابط نشطًا (الصفحة الحالية) */
+.ELE.active {
+    border-bottom: 3px solid var(--main-color); /* إبقاء البوردر ثابت */
+    font-weight: bold;
+    color: var(--main-color);
+    border-radius: 5px;
+    padding-bottom: 3px;
+}
+
+/* 🔹 تأثير عند التمرير (hover) */
+.ELE:hover {
+    color: var(--main-color);
+}
+
+/* 🔹 تغيير `navbar` عند التمرير */
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.95); /* تعتيم الخلفية عند التمرير */
+}
+
+/* 🔹 تحسينات للشاشات الصغيرة */
+@media (max-width: 768px) {
+    .ELE {
+        font-size: 16px;
+        margin: 5px;
+    }
+    .ELE.active {
+        border-bottom: 2px solid var(--main-color);
+    }
+}
